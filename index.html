@@ -2,37 +2,48 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <meta name="keywords" content="Samat, cv, resume">
         <meta name="description" content="Это сайт резюме Самата Омарбаева">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Samat Resume</title>
     </head>
     <body>
-        <img src="assets/images/photo1.JPG" width="200" alt="Омарбаев Самат">
-        <h1>Омарбаев Самат</h1>
-        <p>У меня есть <strong>Youtube канал</strong> посвященный музыке.</p>
-        <p>Люблю заниматься <em>спортом, музыкой и программированием.</em></p>
-        <h2>Мои социальные сети:</h2>
-            <a href="https://www.youtube.com/@champagnedraybeats114" target="_blank">Youtube</a>
-            |
-            <a href="https://t.me/Champagne_Dray_beats" target="_blank">Telegram</a>
-        <h2>Мои хобби:</h2>
-        <ol>
-            <li>Музыка</li>
-            <li>Футбол</li>
-            <li>Программирование</li>
-        </ol>
-        <h2>Опыт работы:</h2>
-            <table>
-                <thead>
+        <div class="container">
+            <div class="info">
+                <img class="my_photo" src="assets/images/photo1.JPG" alt="Омарбаев Самат">
+                <div class="info_text">
+                    <h1 class="title">Омарбаев Самат</h1>
+                    <p>У меня есть Youtube канал посвященный музыке.</p>
+                    <p>Люблю заниматься спортом, музыкой и программированием.</p>
+                    <h3>Мои социальные сети:</h3>
+                    <a href="https://www.youtube.com/@champagnedraybeats114" target="_blank">Youtube</a>
+                    |
+                    <a href="https://t.me/Champagne_Dray_beats" target="_blank">Telegram</a>
+                </div>
+            </div>                    <!--info=============================================-->
+            <div class="card hobie">
+                <h2>Мои хобби:</h2>
+                <ol class="list" type="1">
+                    <li>Музыка</li>
+                    <li>Футбол</li>
+                    <li>Программирование</li>
+                </ol>
+            </div>                      <!--card_hobie================================-->
+            <div class="card table_color">
+                <h2>Опыт работы:</h2>
+                <table class="table">
+<!--                    <thead>-->
+<!--                    <tr>-->
+<!--                        <th>Название</th>-->
+<!--                        <th>Должность</th>-->
+<!--                        <th>Год</th>-->
+<!--                    </tr>-->
+<!--                    </thead>-->
+                    <tbody>
                     <tr>
-                        <th>Название</th>
-                        <th>Должность</th>
-                        <th>Год</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ЮТИ ТПУ</td>
+                        <td>ТПУ</td>
                         <td>студент</td>
                         <td>2018-2022</td>
                     </tr><tr>
@@ -40,30 +51,28 @@
                         <td>битмейкер</td>
                         <td>2022-сейчас</td>
                     </tr>
-                </tbody>
-            </table>
-        <h2>Связаться со мной</h2>
-            <form>
-                <div>
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" placeholder="Введите имя">
+                    </tbody>
+                </table>
+            </div>                      <!--card_table======================================-->
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form_group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Ваш email:</label>
-                    <input type="email" id="email" placeholder="Введите email">
-                </div>
-                <div>
+                <div class="form_group">
                     <label for="message">Введите сообщение:</label>
-                    <br>
                     <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
                 </div>
-                <button type="submit">Отправить!</button>
+                <button class="btn" type="submit">Отправить!</button>
             </form>
-<!--        <h2>Мои хобби</h2>-->
-<!--        <ol type="a">-->
-<!--            <li>Битмейкер</li>-->
-<!--            <li>Спорт: футбол, баскетболл</li>-->
-<!--            <li>Кинематограф</li>-->
-<!--        </ol>-->
+        </div>
+
     </body>
 </html>
